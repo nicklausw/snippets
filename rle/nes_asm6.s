@@ -1,3 +1,13 @@
+; defines
+PPU_CTRL1       = $2000
+PPU_CTRL2       = $2001
+PPU_STATUS      = $2002
+PPU_SPR_ADDR    = $2003
+PPU_SPR_IO      = $2004
+PPU_VRAM_ADDR1  = $2005
+PPU_VRAM_ADDR2  = $2006
+PPU_VRAM_IO     = $2007
+
 ; load rle data to vram!
   lda #<data  ; load the source address into a pointer in zero page
   sta chr_ram
